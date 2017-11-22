@@ -1,102 +1,86 @@
 <!DOCTYPE html>
 <html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Stock Engine</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>Stock Engine</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+     	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+     	<link rel="stylesheet" href="/static/css/boot.css">
+	</head>
+	
+	<body style="background-color:#f1f1f1">
+	  	<div class="header" style="background-color:#678d4c">
+   	   	 	<div class="container-fluid">      
+          	  	<a href="#" class="text-center">
+            		<div class="text-center">
+			  	  		<img style="float:left;margin:15px;" src="/static/img/logo.png" height="50" width="50">
+			  	  		<h1 style="color:#f1f1f1;float:left;margin-top:25px;">Stock Engine</h1>
+					</div>
+          		</a>
+        	</div>
+      	</div>
+		
+		<div class="container-fluid">
+				<br>
+				<div class="row">
+					<div class="col-md-12">
+						<h3><b style="color:#008000">Sign up successful</b></h3>
+  				  	</div>
+				</div>
+				<br>
+				<form action="/" class="inline">
+    				<button class="float-left submit-button">Back to Home</button>
+				</form>
+				<br>
+				<div class="row">
+  				  	<div class="col-md-6">
+    					<div class="row">
+      					  	<div class="col-md-12">
+        					</div>
+    					</div>
+  					  	<!-- /form -->
+    					<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+       				 	<script src="js/index.js"></script>   
 
+    					<div class="right-half">
+							<img src="/static/img/app.png" style="width:70%" align="middle"></div>
+    					</div>
 
+    					<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    					<!-- Include all compiled plugins (below), or include individual files as needed -->
+					</div>
+				</div>
+				
+				<script>
+					$(window).on('resize',function() {
+     					var docHeight = $(window).height();
+     					var footerHeight = $('#footer').height();
+     					var footerTop = $('#footer').position().top + footerHeight;
 
-   
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+     					if (footerTop < docHeight) {
+      						$('#footer').css('margin-top', -30 + (docHeight - footerTop) + 'px');
+     				   	}
+    				});
+    				$(document).ready(function() {
+        				$(window).trigger('resize');
+    				});
+				</script>
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="/static/css/boot.css">
-
-    
-    
-    
-  </head>
-
-  <body>
-<div class="header">
-    <div class="container-fluid">
-      
-          <a href="#" class="text-center">
-            <div class="text-center"><img src="/static/img/logo.png" height="38" width="38"></div>
-            <div class="text-center"><center>Stock Engine</center>
-            </div>
-          </a>
-        </div>
-    
-  </div>
-
-
-      <div class="container-fluid">
-  <div class="content">
-    <div class="row">
-      <div class="col-md-12">
-        <h3><b style="color:#008000">Sign up successful</b></h3>
-  </div>
-</div>
-<form action="/" class="inline">
-    <button class="float-left submit-button" >Back to Home</button>
-</form>
-<div class="row">
-  <div class="col-md-6">
-    <div class="row">
-      <div class="col-md-12">
-        
-      </div>
-    </div>
-  <!-- /form -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-       <script src="js/index.js"></script>   
-
-    <div class="right-half">
-      <br>
-      <br>
-
-      <br><img src="/static/img/app.png" height="350" width="350"></div>
-
-    </div>
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-
-</div>
-  </div>
-<script>
-$(window).on('resize',function() {
-     var docHeight = $(window).height();
-     var footerHeight = $('#footer').height();
-     var footerTop = $('#footer').position().top + footerHeight;
-
-     if (footerTop < docHeight) {
-      $('#footer').css('margin-top', -30 + (docHeight - footerTop) + 'px');
-     }
-    });
-    $(document).ready(function() {
-        $(window).trigger('resize');
-    });
-</script>
-
-<div id="footer">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-          <div>Send feedback to contact@stockengine.com</div>
-          <a href="#">Report Issues</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-  </body>
-</html>
+				<div id="footer">
+  					<div class="container-fluid">
+    					<div class="row">
+      						<div class="col-md-12">
+          						<div>Send feedback to contact@stockengine.com</div>
+          					  	<a href="#">Report Issues</a>
+      					  	</div>
+    					</div>
+  					</div>
+				</div>
+				
+			</div>
+				
+		</body>
+	</html>
+		
