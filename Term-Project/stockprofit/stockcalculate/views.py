@@ -15,14 +15,12 @@ from pprint import pprint
 def addStock(request):
 	return render_to_response("stockcalculate/invest/add-stock.html")
 
-
-
 def homepage(request):
 	return render_to_response("stockcalculate/index.html")
 
 # def login(request):
 
-# 	return render_to_response("stockcalculate/login.html",{'username':"rajeev"})
+# return render_to_response("stockcalculate/login.html",{'username':"rajeev"})
 
 
 def portfolio(request):
